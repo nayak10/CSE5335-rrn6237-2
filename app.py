@@ -26,7 +26,7 @@ class television(db.Model):
     title = db.Column(db.String(80), unique=False)
     imdbrating = db.Column(db.Float, unique=False)
 
-    def __init__(self, imdbid, title, imdbrating):
+    def __init__(self,imdbid,title,imdbrating):
         self.imdbid = imdbid
         self.title = title
         self.imdbrating = imdbrating
@@ -48,7 +48,7 @@ db.session.commit()
 @app.route("/lotsofdata")
 def people():
        
-    url = 'http://omdbapi.com/?t=big%20bang%20theory&Season=10'
+    url = 'http://omdbapi.com/?t=arrow&Season=1'
     f = urllib2.urlopen(url)
     json_string = f.read()
     parsed_json = json.loads(json_string)    
