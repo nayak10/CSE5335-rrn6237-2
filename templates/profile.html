@@ -1,0 +1,27 @@
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function() {
+$("#getData").click(function() {
+	$.getJSON('/lotsofdata', function(dat) {
+      
+  	  	});
+	});
+});
+</script>
+</head>
+<body>
+
+
+</body>
+<div> 
+{% for item in s %}
+	{{ item[1] }} <br/>
+{% endfor %} 
+
+</div>
+
+
+</html>
