@@ -34,36 +34,12 @@ class television(db.Model):
     #def __repr__(self):
      #   return '<television %r>' % self.username
 
-app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://flxvzdgthifjqo:YCViVah6QaxrzLgfQoousIxrOC@ec2-54-204-7-145.compute-1.amazonaws.com:5432/d15ik4407jjv1q'
+
 @app.route("/")
 def hello():
-    url = 'http://omdbapi.com/?t=arrow&Season=1'
-    f = urllib2.urlopen(url)
-    json_string = f.read()
-    parsed_json = json.loads(json_string)    
-    f.close()
-    #print(parsed_json)
-    #hello = parsed_json["Episodes"][0]["Title"]
-    s = []
-    for i in range(0,14):
-         hello = []
-         #hello.append(parsed_json["Episodes"][i]["Episode"])
-         hello.append(parsed_json["Episodes"][i]["imdbID"])
-         hello.append(parsed_json["Episodes"][i]["Title"])
-         hello.append(parsed_json["Episodes"][i]["imdbRating"])
-         s.append(hello)
-         tv = television(parsed_json["Episodes"][i]["imdbID"], parsed_json["Episodes"][i]["Title"], parsed_json["Episodes"][i]["imdbRating"])
-         db.session.add(tv)
-         db.session.commit()
+    return "Hello! Displaying Json Data"
 
-    #conn = psycopg2.connect("dbname=test user=postgres")
-    #cur = conn.cursor()
-    #cur.execute("DROP TABLE test;")
-    #cur.execute("CREATE TABLE test (id serial PRIMARY KEY, num integer, data varchar);")
-    
-    return render_template('profile.html', s=s)
-#    return "Hello! Displaying Json Data"
-
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://flxvzdgthifjqo:YCViVah6QaxrzLgfQoousIxrOC@ec2-54-204-7-145.compute-1.amazonaws.com:5432/d15ik4407jjv1q'
 
 #db.reflect()
 db.create_all()
