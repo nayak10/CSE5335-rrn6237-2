@@ -1,87 +1,3 @@
-2015-11-16T10:25:55.204806+00:00 app[web.1]: [2015-11-16 10:25:55 +0000] [3] [INFO] Listening at: http://0.0.0.0:13803 (3)
-2015-11-16T10:25:55.204841+00:00 app[web.1]: [2015-11-16 10:25:55 +0000] [3] [INFO] Using worker: sync
-2015-11-16T10:25:55.208486+00:00 app[web.1]: [2015-11-16 10:25:55 +0000] [9] [INFO] Booting worker with pid: 9
-2015-11-16T10:25:55.981272+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:25:55.981276+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:25:55.983850+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:25:55.983852+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:25:56.726456+00:00 heroku[web.1]: State changed from starting to up
-2015-11-16T10:26:20.517180+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=c7a4cf8c-e774-442b-8e47-2549071d79fe fwd="76.185.80.245" dyno=web.1 connect=1ms service=2ms status=200 bytes=187
-2015-11-16T10:26:28.032716+00:00 heroku[router]: at=info method=GET path="/favicon.ico" host=cse-rrn6237-2.herokuapp.com request_id=1b3d66bb-553a-4b6f-b352-c95eaedf3e38 fwd="76.185.80.245" dyno=web.1 connect=1ms service=114ms status=404 bytes=391
-2015-11-16T10:26:44.126533+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=fd6d17ca-e7a8-4e9d-aab5-af2a53bd919e fwd="76.185.80.245" dyno=web.1 connect=0ms service=136ms status=500 bytes=456
-2015-11-16T10:26:59.844645+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=0452e65f-7459-4bca-8126-8481df89567e fwd="76.185.80.245" dyno=web.1 connect=1ms service=110ms status=500 bytes=456
-2015-11-16T10:27:01.653772+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=3e9e6e6f-9ca0-4cd7-a09c-eae2910682ef fwd="76.185.80.245" dyno=web.1 connect=1ms service=130ms status=500 bytes=456
-2015-11-16T10:27:03.145173+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=23f9a986-c1b1-4fef-8bf7-51d4d49fd2fa fwd="76.185.80.245" dyno=web.1 connect=1ms service=106ms status=500 bytes=456
-2015-11-16T10:27:04.308874+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=ef4f2195-bf8e-4334-82cc-f6026965f2f2 fwd="76.185.80.245" dyno=web.1 connect=2ms service=60ms status=500 bytes=456
-2015-11-16T10:27:53.100150+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=192dcb1b-6ceb-4e18-97b0-e9cdf3d06645 fwd="76.185.80.245" dyno=web.1 connect=0ms service=82ms status=500 bytes=456
-2015-11-16T10:28:25.455097+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=d756115c-01f0-4dc3-a469-3df79d9d09fc fwd="76.185.80.245" dyno=web.1 connect=1ms service=88ms status=500 bytes=456
-2015-11-16T10:28:28.461341+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=319b6887-3c2a-432e-bcdf-9af5076270f7 fwd="76.185.80.245" dyno=web.1 connect=1ms service=54ms status=500 bytes=456
-2015-11-16T10:35:19.069601+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=a9c71726-3b91-4aad-a57d-1a56ca3a4b58 fwd="76.185.80.245" dyno=web.1 connect=0ms service=207ms status=500 bytes=456
-2015-11-16T10:35:20.506210+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=e414065f-f8a8-482f-a202-23a7ad39912a fwd="76.185.80.245" dyno=web.1 connect=0ms service=58ms status=500 bytes=456
-2015-11-16T10:35:21.759651+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=cfca4f9f-c100-4487-939a-8b803f207316 fwd="76.185.80.245" dyno=web.1 connect=11ms service=54ms status=500 bytes=456
-2015-11-16T10:35:22.701392+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=ae2271be-53fe-4552-aa95-e743b8ac6918 fwd="76.185.80.245" dyno=web.1 connect=1ms service=97ms status=500 bytes=456
-2015-11-16T10:38:30.293034+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=3de15670-f127-4635-97e5-db787573c48e fwd="76.185.80.245" dyno=web.1 connect=0ms service=2ms status=200 bytes=187
-2015-11-16T10:38:34.508615+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=eb8944e8-32ba-4267-96b8-67ffe2340413 fwd="76.185.80.245" dyno=web.1 connect=1ms service=110ms status=500 bytes=456
-2015-11-16T10:39:58.046794+00:00 heroku[router]: at=info method=GET path="/profile.html" host=cse-rrn6237-2.herokuapp.com request_id=0af85480-11bf-4ae2-b05a-1496a5da3f6b fwd="76.185.80.245" dyno=web.1 connect=1ms service=1ms status=404 bytes=391
-2015-11-16T10:40:04.017284+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=df9e1858-d26f-4444-98f5-ba1a274a5c99 fwd="76.185.80.245" dyno=web.1 connect=0ms service=91ms status=500 bytes=456
-2015-11-16T10:48:33.957458+00:00 heroku[api]: Deploy 84a18c8 by rajesh.nayak@mavs.uta.edu
-2015-11-16T10:48:33.957458+00:00 heroku[api]: Release v8 created by rajesh.nayak@mavs.uta.edu
-2015-11-16T10:48:34.120147+00:00 heroku[slug-compiler]: Slug compilation started
-2015-11-16T10:48:34.120157+00:00 heroku[slug-compiler]: Slug compilation finished
-2015-11-16T10:48:36.903983+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
-2015-11-16T10:48:34.085600+00:00 heroku[web.1]: State changed from up to starting
-2015-11-16T10:48:38.184177+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2015-11-16T10:48:38.268417+00:00 app[web.1]: [2015-11-16 10:48:38 +0000] [3] [INFO] Starting gunicorn 19.3.0
-2015-11-16T10:48:38.300591+00:00 app[web.1]: [2015-11-16 10:48:38 +0000] [10] [INFO] Booting worker with pid: 10
-2015-11-16T10:48:38.268817+00:00 app[web.1]: [2015-11-16 10:48:38 +0000] [3] [INFO] Listening at: http://0.0.0.0:58793 (3)
-2015-11-16T10:48:38.268905+00:00 app[web.1]: [2015-11-16 10:48:38 +0000] [3] [INFO] Using worker: sync
-2015-11-16T10:48:38.273500+00:00 app[web.1]: [2015-11-16 10:48:38 +0000] [9] [INFO] Booting worker with pid: 9
-2015-11-16T10:48:38.589808+00:00 heroku[web.1]: State changed from starting to up
-2015-11-16T10:48:38.926267+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:48:38.926273+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:48:38.927591+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:48:38.927593+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:48:39.349417+00:00 app[web.1]: [2015-11-16 10:48:39 +0000] [3] [INFO] Shutting down: Master
-2015-11-16T10:48:39.309432+00:00 app[web.1]: [2015-11-16 10:48:39 +0000] [9] [INFO] Worker exiting (pid: 9)
-2015-11-16T10:48:39.309547+00:00 app[web.1]: [2015-11-16 10:48:39 +0000] [3] [INFO] Handling signal: term
-2015-11-16T10:48:39.310097+00:00 app[web.1]: [2015-11-16 10:48:39 +0000] [10] [INFO] Worker exiting (pid: 10)
-2015-11-16T10:48:40.248611+00:00 heroku[web.1]: Process exited with status 0
-2015-11-16T10:49:13.087764+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=95238ba9-aa34-40b8-841e-e6f98cb1ed81 fwd="76.185.80.245" dyno=web.1 connect=1ms service=2ms status=200 bytes=187
-2015-11-16T10:49:21.775315+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=4980312a-c4b5-498d-a341-b8a36a775035 fwd="76.185.80.245" dyno=web.1 connect=1ms service=4788ms status=500 bytes=456
-2015-11-16T10:58:19.368560+00:00 heroku[web.1]: State changed from up to starting
-2015-11-16T10:58:22.203624+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2015-11-16T10:58:23.018816+00:00 app[web.1]: [2015-11-16 10:58:23 +0000] [9] [INFO] Worker exiting (pid: 9)
-2015-11-16T10:58:23.018826+00:00 app[web.1]: [2015-11-16 10:58:23 +0000] [10] [INFO] Worker exiting (pid: 10)
-2015-11-16T10:58:23.018938+00:00 app[web.1]: [2015-11-16 10:58:23 +0000] [3] [INFO] Handling signal: term
-2015-11-16T10:58:23.024037+00:00 app[web.1]: [2015-11-16 10:58:23 +0000] [3] [INFO] Shutting down: Master
-2015-11-16T10:58:23.452621+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
-2015-11-16T10:58:23.617166+00:00 heroku[web.1]: Process exited with status 0
-2015-11-16T10:58:25.053801+00:00 app[web.1]: [2015-11-16 10:58:25 +0000] [3] [INFO] Starting gunicorn 19.3.0
-2015-11-16T10:58:25.104085+00:00 app[web.1]: [2015-11-16 10:58:25 +0000] [10] [INFO] Booting worker with pid: 10
-2015-11-16T10:58:25.054203+00:00 app[web.1]: [2015-11-16 10:58:25 +0000] [3] [INFO] Listening at: http://0.0.0.0:45387 (3)
-2015-11-16T10:58:25.054284+00:00 app[web.1]: [2015-11-16 10:58:25 +0000] [3] [INFO] Using worker: sync
-2015-11-16T10:58:25.057942+00:00 app[web.1]: [2015-11-16 10:58:25 +0000] [9] [INFO] Booting worker with pid: 9
-2015-11-16T10:58:25.568911+00:00 heroku[web.1]: State changed from starting to up
-2015-11-16T10:58:25.721771+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:58:25.721775+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:58:25.724133+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
-2015-11-16T10:58:25.724135+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
-2015-11-16T10:59:10.563627+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=14413382-8c16-42e4-b1c8-ab5301064ca0 fwd="76.185.80.245" dyno=web.1 connect=2ms service=3ms status=200 bytes=187
-2015-11-16T10:59:14.014607+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=31bc51e5-ce4d-4ae7-9ae7-6cf01ce4bca2 fwd="76.185.80.245" dyno=web.1 connect=1ms service=142ms status=500 bytes=456
-2015-11-16T11:03:36.588225+00:00 heroku[api]: Starting process with command `init` by rajesh.nayak@mavs.uta.edu
-2015-11-16T11:03:40.508775+00:00 heroku[run.2182]: Awaiting client
-2015-11-16T11:03:40.557696+00:00 heroku[run.2182]: Starting process with command `init`
-2015-11-16T11:03:40.885694+00:00 heroku[run.2182]: State changed from starting to up
-2015-11-16T11:03:43.220674+00:00 heroku[run.2182]: State changed from up to complete
-2015-11-16T11:03:43.210095+00:00 heroku[run.2182]: Process exited with status 127
-2015-11-16T11:04:58.273470+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=0afb0abd-7055-4a86-b3f7-e72c654f421c fwd="76.185.80.245" dyno=web.1 connect=0ms service=3ms status=200 bytes=187
-2015-11-16T11:05:11.716709+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=9384bf04-17d7-4797-91dd-fc6d4766c49e fwd="76.185.80.245" dyno=web.1 connect=12ms service=201ms status=500 bytes=456
-2015-11-16T11:08:14.054862+00:00 heroku[api]: Deploy 1628e73 by rajesh.nayak@mavs.uta.edu
-2015-11-16T11:08:14.054862+00:00 heroku[api]: Release v9 created by rajesh.nayak@mavs.uta.edu
-2015-11-16T11:08:14.222775+00:00 heroku[slug-compiler]: Slug compilation started
-2015-11-16T11:08:14.222785+00:00 heroku[slug-compiler]: Slug compilation finished
-2015-11-16T11:08:14.671202+00:00 heroku[web.1]: State changed from up to starting
-2015-11-16T11:08:17.214046+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
 2015-11-16T11:08:18.265353+00:00 heroku[web.1]: Stopping all processes with SIGTERM
 2015-11-16T11:08:19.041003+00:00 app[web.1]: [2015-11-16 11:08:19 +0000] [3] [INFO] Starting gunicorn 19.3.0
 2015-11-16T11:08:19.105255+00:00 app[web.1]: [2015-11-16 11:08:19 +0000] [10] [INFO] Booting worker with pid: 10
@@ -99,3 +15,87 @@
 2015-11-16T11:08:19.914396+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
 2015-11-16T11:08:20.450116+00:00 heroku[web.1]: Process exited with status 0
 2015-11-16T11:08:46.257391+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=5fc4860b-c5bf-4158-aee0-914d3bab7a3a fwd="76.185.80.245" dyno=web.1 connect=0ms service=1619ms status=500 bytes=456
+2015-11-16T11:08:49.105715+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=7b9f14e3-ba9c-4527-b0f4-de1bfcefb707 fwd="76.185.80.245" dyno=web.1 connect=0ms service=120ms status=500 bytes=456
+2015-11-16T11:08:51.165500+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=852d605b-ae9f-4898-a827-bbca971d1c82 fwd="76.185.80.245" dyno=web.1 connect=2ms service=115ms status=500 bytes=456
+2015-11-16T11:42:00.684223+00:00 heroku[web.1]: Idling
+2015-11-16T11:42:00.684873+00:00 heroku[web.1]: State changed from up to down
+2015-11-16T11:42:00.690276+00:00 heroku[web.1]: State changed from down to starting
+2015-11-16T11:42:04.002448+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-11-16T11:42:05.809578+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-11-16T11:42:06.187143+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [3] [INFO] Listening at: http://0.0.0.0:33772 (3)
+2015-11-16T11:42:06.187289+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [3] [INFO] Using worker: sync
+2015-11-16T11:42:06.192743+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [9] [INFO] Booting worker with pid: 9
+2015-11-16T11:42:06.186534+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-11-16T11:42:06.243813+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [10] [INFO] Booting worker with pid: 10
+2015-11-16T11:42:06.985026+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-11-16T11:42:06.985033+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-11-16T11:42:06.985170+00:00 app[web.1]: [2015-11-16 11:42:06 +0000] [3] [INFO] Handling signal: term
+2015-11-16T11:42:07.021759+00:00 app[web.1]: [2015-11-16 11:42:07 +0000] [3] [INFO] Shutting down: Master
+2015-11-16T11:42:07.052830+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T11:42:07.055071+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T11:42:07.052835+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T11:42:07.055075+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T11:42:07.773529+00:00 heroku[web.1]: State changed from starting to up
+2015-11-16T11:42:07.908732+00:00 heroku[web.1]: Process exited with status 0
+2015-11-16T12:14:18.817940+00:00 heroku[web.1]: Idling
+2015-11-16T12:14:18.818614+00:00 heroku[web.1]: State changed from up to down
+2015-11-16T12:14:23.100881+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-11-16T12:14:24.366491+00:00 app[web.1]: [2015-11-16 12:14:24 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-11-16T12:14:24.400696+00:00 app[web.1]: [2015-11-16 12:14:24 +0000] [3] [INFO] Shutting down: Master
+2015-11-16T12:14:24.366059+00:00 app[web.1]: [2015-11-16 12:14:24 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-11-16T12:14:24.393734+00:00 app[web.1]: [2015-11-16 12:14:24 +0000] [3] [INFO] Handling signal: term
+2015-11-16T12:14:25.211555+00:00 heroku[web.1]: Process exited with status 0
+2015-11-16T18:18:34.112872+00:00 heroku[web.1]: Unidling
+2015-11-16T18:18:34.113158+00:00 heroku[web.1]: State changed from down to starting
+2015-11-16T18:18:36.944284+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-11-16T18:18:39.038272+00:00 app[web.1]: [2015-11-16 18:18:39 +0000] [3] [INFO] Listening at: http://0.0.0.0:6534 (3)
+2015-11-16T18:18:39.044512+00:00 app[web.1]: [2015-11-16 18:18:39 +0000] [9] [INFO] Booting worker with pid: 9
+2015-11-16T18:18:39.037254+00:00 app[web.1]: [2015-11-16 18:18:39 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-11-16T18:18:39.038387+00:00 app[web.1]: [2015-11-16 18:18:39 +0000] [3] [INFO] Using worker: sync
+2015-11-16T18:18:39.146733+00:00 app[web.1]: [2015-11-16 18:18:39 +0000] [10] [INFO] Booting worker with pid: 10
+2015-11-16T18:18:40.220157+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T18:18:40.220160+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T18:18:40.230359+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T18:18:40.230364+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T18:18:40.640322+00:00 heroku[web.1]: State changed from starting to up
+2015-11-16T18:18:41.471944+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=66db9721-3764-4acb-bca4-1267c9619342 fwd="129.107.80.32" dyno=web.1 connect=0ms service=307ms status=500 bytes=456
+2015-11-16T18:20:00.812848+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=ec7aa3d5-9dcd-41dc-a434-18d1fd4c0e9c fwd="129.107.80.32" dyno=web.1 connect=1ms service=128ms status=500 bytes=456
+2015-11-16T18:20:03.753996+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=0ba23e70-37cf-43b9-a998-41aeb9feddad fwd="129.107.80.32" dyno=web.1 connect=2ms service=63ms status=500 bytes=456
+2015-11-16T18:20:05.705482+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=026a4baf-99a9-4ed8-9200-8f4533c42abe fwd="129.107.80.32" dyno=web.1 connect=2ms service=75ms status=500 bytes=456
+2015-11-16T18:20:07.735464+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=d6397a4d-5fda-4a06-b0c5-312c815ab570 fwd="129.107.80.32" dyno=web.1 connect=1ms service=88ms status=500 bytes=456
+2015-11-16T18:20:08.484251+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=4a89535e-8d4d-4fa8-9e7b-cdf66c5660dc fwd="129.107.80.32" dyno=web.1 connect=0ms service=52ms status=500 bytes=456
+2015-11-16T18:20:09.137977+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=b199a05a-51d8-4520-8247-18f221e2a49a fwd="129.107.80.32" dyno=web.1 connect=1ms service=61ms status=500 bytes=456
+2015-11-16T18:20:09.357513+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=33cc630f-7816-4b08-bf5e-40cdadbfe152 fwd="129.107.80.32" dyno=web.1 connect=0ms service=62ms status=500 bytes=456
+2015-11-16T18:20:09.561215+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=f79778b2-666e-4eee-8871-d660e292a525 fwd="129.107.80.32" dyno=web.1 connect=0ms service=54ms status=500 bytes=456
+2015-11-16T18:20:09.879392+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=b3e9beac-d30e-4b14-b592-341412a828f4 fwd="129.107.80.32" dyno=web.1 connect=1ms service=108ms status=500 bytes=456
+2015-11-16T18:20:10.254794+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=1482cb82-15c3-4a7d-b1c7-a310dd73e80b fwd="129.107.80.32" dyno=web.1 connect=1ms service=96ms status=500 bytes=456
+2015-11-16T18:21:22.826008+00:00 heroku[api]: Release v10 created by rajesh.nayak@mavs.uta.edu
+2015-11-16T18:21:22.826008+00:00 heroku[api]: Deploy 1e7e537 by rajesh.nayak@mavs.uta.edu
+2015-11-16T18:21:22.983839+00:00 heroku[slug-compiler]: Slug compilation started
+2015-11-16T18:21:22.983884+00:00 heroku[slug-compiler]: Slug compilation finished
+2015-11-16T18:21:22.929995+00:00 heroku[web.1]: State changed from up to starting
+2015-11-16T18:21:25.261580+00:00 heroku[web.1]: Starting process with command `gunicorn app:app`
+2015-11-16T18:21:27.062212+00:00 heroku[web.1]: Stopping all processes with SIGTERM
+2015-11-16T18:21:27.441868+00:00 app[web.1]: [2015-11-16 18:21:27 +0000] [3] [INFO] Listening at: http://0.0.0.0:29368 (3)
+2015-11-16T18:21:27.441968+00:00 app[web.1]: [2015-11-16 18:21:27 +0000] [3] [INFO] Using worker: sync
+2015-11-16T18:21:27.445849+00:00 app[web.1]: [2015-11-16 18:21:27 +0000] [9] [INFO] Booting worker with pid: 9
+2015-11-16T18:21:27.441421+00:00 app[web.1]: [2015-11-16 18:21:27 +0000] [3] [INFO] Starting gunicorn 19.3.0
+2015-11-16T18:21:27.460311+00:00 app[web.1]: [2015-11-16 18:21:27 +0000] [10] [INFO] Booting worker with pid: 10
+2015-11-16T18:21:28.005998+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T18:21:28.005993+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T18:21:28.007229+00:00 app[web.1]: /app/.heroku/python/lib/python2.7/site-packages/flask_sqlalchemy/__init__.py:800: UserWarning: SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.
+2015-11-16T18:21:28.007231+00:00 app[web.1]:   warnings.warn('SQLALCHEMY_TRACK_MODIFICATIONS adds significant overhead and will be disabled by default in the future.  Set it to True to suppress this warning.')
+2015-11-16T18:21:28.555246+00:00 app[web.1]: [2015-11-16 18:21:28 +0000] [9] [INFO] Worker exiting (pid: 9)
+2015-11-16T18:21:28.555249+00:00 app[web.1]: [2015-11-16 18:21:28 +0000] [3] [INFO] Handling signal: term
+2015-11-16T18:21:28.555869+00:00 app[web.1]: [2015-11-16 18:21:28 +0000] [10] [INFO] Worker exiting (pid: 10)
+2015-11-16T18:21:28.673080+00:00 app[web.1]: [2015-11-16 18:21:28 +0000] [3] [INFO] Shutting down: Master
+2015-11-16T18:21:28.867158+00:00 heroku[web.1]: State changed from starting to up
+2015-11-16T18:21:29.560257+00:00 heroku[web.1]: Process exited with status 0
+2015-11-16T18:21:31.375365+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=1f07355b-c3bc-410a-8f93-ad562ab17146 fwd="129.107.80.32" dyno=web.1 connect=1ms service=2ms status=200 bytes=187
+2015-11-16T18:21:35.149456+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=e78ea5f6-8d65-4708-81c4-c70287299b00 fwd="129.107.80.32" dyno=web.1 connect=1ms service=123ms status=500 bytes=456
+2015-11-16T18:24:14.205101+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=44d5d1af-fbb7-4b8e-a2c9-b34cacffe26e fwd="129.107.80.32" dyno=web.1 connect=0ms service=50ms status=500 bytes=456
+2015-11-16T18:24:15.300949+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=4e72981e-fcfc-4830-b226-01c7c734b186 fwd="129.107.80.32" dyno=web.1 connect=2ms service=51ms status=500 bytes=456
+2015-11-16T18:24:16.158478+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=a8e4c380-0b69-458c-91e7-1048a7974df4 fwd="129.107.80.32" dyno=web.1 connect=1ms service=69ms status=500 bytes=456
+2015-11-16T18:24:16.940911+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=9f4d5761-f0a6-4e0e-a8a7-ce84885c5989 fwd="129.107.80.32" dyno=web.1 connect=0ms service=93ms status=500 bytes=456
+2015-11-16T18:24:17.906668+00:00 heroku[router]: at=info method=GET path="/lotsofdata" host=cse-rrn6237-2.herokuapp.com request_id=ef109e05-cacb-4502-ba63-f2604737a95b fwd="129.107.80.32" dyno=web.1 connect=0ms service=90ms status=500 bytes=456
+2015-11-16T18:24:20.778764+00:00 heroku[router]: at=info method=GET path="/" host=cse-rrn6237-2.herokuapp.com request_id=b1577393-6911-4c85-a6af-4827dd2bcbd4 fwd="129.107.80.32" dyno=web.1 connect=2ms service=2ms status=200 bytes=187

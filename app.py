@@ -41,14 +41,13 @@ def hello():
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://flxvzdgthifjqo:YCViVah6QaxrzLgfQoousIxrOC@ec2-54-204-7-145.compute-1.amazonaws.com:5432/d15ik4407jjv1q'
 
-#db.reflect()
 db.create_all()
 db.session.commit()
         
 @app.route("/lotsofdata")
 def people():
        
-    url = 'http://omdbapi.com/?t=arrow&Season=1'
+    url = 'http://omdbapi.com/?t=arrow&Season=2'
     f = urllib2.urlopen(url)
     json_string = f.read()
     parsed_json = json.loads(json_string)    
