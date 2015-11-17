@@ -13,7 +13,7 @@ except psycopg2.Error as e:
 
 idinput = input("Enter IMDB ID to query on: ")    
 cur = conn.cursor()
-cur.execute("SELECT * from friends where imbdid= %s " % (idinput))
+cur.execute("SELECT * from friends where imbdid= '%s' " % (idinput))
 rows = cur.fetchall()
 
 print "\nShow me the Episodes:\n"
