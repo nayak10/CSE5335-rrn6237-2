@@ -21,7 +21,7 @@ app = Flask(__name__)
 db = SQLAlchemy(app)
 
 
-class television(db.Model):
+class television1(db.Model):
     imdbid = db.Column(db.String(80), primary_key=True)
     title = db.Column(db.String(80), unique=False)
     imdbrating = db.Column(db.Float, unique=False)
@@ -40,6 +40,7 @@ def hello():
     return "Hello! Displaying Json Data"
 
 app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://flxvzdgthifjqo:YCViVah6QaxrzLgfQoousIxrOC@ec2-54-204-7-145.compute-1.amazonaws.com:5432/d15ik4407jjv1q'
+#db.reflect()
 
 db.create_all()
 db.session.commit()
@@ -47,7 +48,7 @@ db.session.commit()
 @app.route("/lotsofdata")
 def people():
        
-    url = 'http://omdbapi.com/?t=arrow&Season=2'
+    url = 'http://omdbapi.com/?t=sherlock&Season=1'
     f = urllib2.urlopen(url)
     json_string = f.read()
     parsed_json = json.loads(json_string)    
@@ -55,14 +56,14 @@ def people():
     #print(parsed_json)
     #hello = parsed_json["Episodes"][0]["Title"]
     s = []
-    for i in range(0,14):
+    for i in range(0,2):
          hello = []
          #hello.append(parsed_json["Episodes"][i]["Episode"])
          hello.append(parsed_json["Episodes"][i]["imdbID"])
          hello.append(parsed_json["Episodes"][i]["Title"])
          hello.append(parsed_json["Episodes"][i]["imdbRating"])
          s.append(hello)
-         tv = television(parsed_json["Episodes"][i]["imdbID"], parsed_json["Episodes"][i]["Title"], parsed_json["Episodes"][i]["imdbRating"])
+         tv = television1(parsed_json["Episodes"][i]["imdbID"], parsed_json["Episodes"][i]["Title"], parsed_json["Episodes"][i]["imdbRating"])
          db.session.add(tv)
          db.session.commit()
 
