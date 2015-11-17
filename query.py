@@ -23,11 +23,11 @@ for row in rows:
     print "   ", row[0],"-----",row[1],"-----", row[2],"-----", row[3]
 
 
-low = raw_input("Enter lower bound for IMDB rating")    
-high = raw_input("Enter upper bound for IMDB rating")    
+low = raw_input("Enter lower bound for FIFA rating")    
+high = raw_input("Enter upper bound for FIFA rating")    
 
 cur1 = conn.cursor()
-query1 = "SELECT * from footballers where fifarating between "  + low + " and " + high + ";"
+query1 = "SELECT * from footballers where fifarating between "  + low + " and " + high + "limit 20;"
 #query1 = "SELECT * from footballers;"
 cur1.execute(query1)
 rows1 = cur1.fetchall()
