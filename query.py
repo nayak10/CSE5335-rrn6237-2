@@ -14,18 +14,9 @@ except psycopg2.Error as e:
     #print e.pgcode
     #print e.pgerror
     #print traceback.format_exc()
-'''
-conn = psycopg2.connect(
-    database=url.path[1:],
-    user=url.username,
-    password=url.password,
-    host=url.hostname,
-    port=url.port
-)
-'''
 
 cur = conn.cursor()
-cur.execute("""SELECT * from friends""")
+cur.execute("""SELECT * from friends where imbdid= 'tt0583605' """)
 rows = cur.fetchall()
 
 print "\nShow me the Episodes:\n"
