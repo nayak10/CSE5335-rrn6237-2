@@ -10,17 +10,13 @@ try:
     conn = psycopg2.connect("dbname='d43brbvbt6ugl9' user='ywhsrpfxdaknkl' host='ec2-107-21-223-147.compute-1.amazonaws.com' password='dnYTje6Tvi_vDyGq9Z1Qsf5yhY'")
 except psycopg2.Error as e:
     print "I am unable to connect to the database"
-    #print e
-    #print e.pgcode
-    #print e.pgerror
-    #print traceback.format_exc()
 
+idinput = input("Enter IMDB ID to query on")    
 cur = conn.cursor()
-cur.execute("""SELECT * from friends where imbdid= 'tt0583605' """)
+cur.execute("SELECT * from friends where imbdid= %s ", (idinput))
 rows = cur.fetchall()
 
 print "\nShow me the Episodes:\n"
 for row in rows:
     print "   ", row[0],"-----",row[1],"-----", row[2]
-    #print "   ", row[1]
-    #print "   ", row[2]
+    
