@@ -11,12 +11,14 @@ try:
 except psycopg2.Error as e:
     print "I am unable to connect to the database"
 
-idinput = input("Enter IMDB ID to query on: ")    
+idinput = raw_input("Enter IMDB ID to query on: ")    
 cur = conn.cursor()
-cur.execute("SELECT * from friends where imbdid= '%s' " % (idinput))
+query = "SELECT * from friends where imbdid like " + "'%" + idinput + "%'"
+#cur.execute("""SELECT * from friends where imbdid = '%s' """ % (idinput))
+cur.execute(query)
 rows = cur.fetchall()
 
-print "\nShow me the Episodes:\n"
+print "\nShow me the Episode:\n"
 for row in rows:
     print "   ", row[0],"-----",row[1],"-----", row[2]
     
