@@ -19,7 +19,7 @@ r_server = redis.from_url("redis://h:pfakc6aj500pgttocvmqcj541c@ec2-54-83-59-218
 
 c=0
 count = 0
-with open('C:\\Users\\Nayak\\Desktop\\Book1.csv', 'rb') as f:
+with open('Book1.csv', 'rb') as f:
     reader = csv.reader(f)
     for row in reader:
         c = c+1  
