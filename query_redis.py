@@ -24,7 +24,7 @@ low = raw_input("Enter lower bound for FIFA rating")
 high = raw_input("Enter upper bound for FIFA rating")    
 
 for x in range(1,100):
-    if r_server.hvals(x)[2] > low and r_server.hvals(x)[2] < high:
+    if r_server.hvals(x)[2] >= low and r_server.hvals(x)[2] <= high:
         print "Player Name: " + r_server.hvals(x)[0] + " | Team Name: " + r_server.hvals(x)[1] + " | Player Rating: " + r_server.hvals(x)[2] 
         #print "Team Name: ", r_server.hvals(x)[1]
         #print "Player Rating: ", r_server.hvals(x)[2]
