@@ -1,4 +1,4 @@
-print ("Please run the command --- pip install pymongo --- if pymongo is not installed on Heroku yet, and then run the command python query_mongodb.py")
+print ("\n\nPlease run the command --- pip install pymongo --- if pymongo is not installed on Heroku yet, and then run the command python query_mongodb.py\n\n")
 
 from pymongo import MongoClient  
 

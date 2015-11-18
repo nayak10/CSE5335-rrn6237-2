@@ -4,7 +4,7 @@ Created on Tue Nov 17 12:54:33 2015
 
 @author: Nayak
 """
-print ("Please run the command --- pip install redis --- if redis is not installed on Heroku yet, and then run the command python insert_redis.py")
+print ("\n\nPlease run the command --- pip install redis --- if redis is not installed on Heroku yet, and then run the command python insert_redis.py\n\n")
 
 import csv
 import redis

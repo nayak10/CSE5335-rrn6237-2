@@ -4,7 +4,7 @@ Created on Tue Nov 17 17:10:23 2015
 
 @author: Nayak
 """
-print ("Please run the command --- pip install pymongo --- if pymongo is not installed on Heroku yet, and then run the command python insert_mongodb.py")
+print ("\n\nPlease run the command --- pip install pymongo --- if pymongo is not installed on Heroku yet, and then run the command python insert_mongodb.py\n\n")
 from pymongo import MongoClient  
 import csv
 
