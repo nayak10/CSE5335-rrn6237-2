@@ -1,4 +1,0 @@
-=== cse-rrn6237-2 Config Vars
-DATABASE_URL: postgres://tajitmcdjbfhsb:QIT6b8hSuViOe-iLGdoUdZ-MY-@ec2-107-21-223-72.compute-1.amazonaws.com:5432/dk3505cd5g85t
-MONGOLAB_URI: mongodb://heroku_9crjjz3b:eo0hbm9sgq5lkre3503kr3prsr@ds055584.mongolab.com:55584/heroku_9crjjz3b
-REDIS_URL:    redis://h:pfakc6aj500pgttocvmqcj541c@ec2-54-83-59-218.compute-1.amazonaws.com:9979
