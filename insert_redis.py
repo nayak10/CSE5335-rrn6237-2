@@ -5,11 +5,6 @@ Created on Tue Nov 17 12:54:33 2015
 @author: Nayak
 """
 
-import pip
-
-def install(package):
-    pip.main(['install', redis])
-
 import csv
 import redis
 
