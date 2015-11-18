@@ -4,6 +4,8 @@ Created on Tue Nov 17 02:12:17 2015
 
 @author: Nayak
 """
+print ("Please run the command --- pip install redis --- if redis is not installed on Heroku yet, and then run the command python query_redis.py")
+
 import pip
 
 def install(package):

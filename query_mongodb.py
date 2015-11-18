@@ -1,3 +1,5 @@
+print ("Please run the command --- pip install pymongo --- if pymongo is not installed on Heroku yet, and then run the command python query_mongodb.py")
+
 from pymongo import MongoClient  
 
 mongolab_uri = "mongodb://heroku_9crjjz3b:eo0hbm9sgq5lkre3503kr3prsr@ds055584.mongolab.com:55584/heroku_9crjjz3b"
