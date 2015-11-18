@@ -1,10 +1,5 @@
 #import os
 import psycopg2
-#import urlparse
-#import traceback
-
-#urlparse.uses_netloc.append("postgres")
-#url = urlparse.urlparse(os.environ["postgres://flxvzdgthifjqo:YCViVah6QaxrzLgfQoousIxrOC@ec2-54-204-7-145.compute-1.amazonaws.com:5432/d15ik4407jjv1q"])
 
 try:
     conn = psycopg2.connect("dbname='dk3505cd5g85t' user='tajitmcdjbfhsb' host='ec2-107-21-223-72.compute-1.amazonaws.com' password='QIT6b8hSuViOe-iLGdoUdZ-MY-'")
